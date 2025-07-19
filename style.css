@@ -32,17 +32,19 @@ body {
 
 .wrapper {
   inline-size: 100svw;
-  block-size: 100svh;
+  min-block-size: 100svh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding-inline: var(--spacing-200);
 }
 
 .card {
   max-inline-size: 320px;
   background-color: var(--color-white);
   border-radius: 20px;
+  margin-block-start: var(--spacing-200);
 }
 
 .img-wrapper {
@@ -76,7 +78,7 @@ body {
 .attribution {
   font-size: 1.1rem;
   text-align: center;
-  padding-block-start: var(--spacing-200);
+  padding-block: var(--spacing-200);
 }
 
 .attribution a {
